@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Ultra&display=swap');
+
+body {
+    background-color:mintcream;
+    color: #003049;
+    font-family: "Playfair Display", serif;
+    
+
+}
+
+img {
+    width: 400px;
+    border-radius: 40%;
+    margin: 0px 60px 50px;
+    border: #F77F00 solid 10px;
+    border-radius: 70% 40%;
+}
+
+h1 {
+    font-family: "Abril Fatface", serif;
+    font-size: 140px;
+    margin: 30px 30px 70px 80px;
+    text-align: center;
+    display: inline-block;
+}
+
+#comma {
+    color: #F77F00;
+}
+
+h2 {
+    color: #D62828;
+    padding: 2px 5px;
+    margin: 0px 4px;
+    /* border: #8BBF9F solid 3px; */
+    text-decoration: underline;
+    font-weight:300;
+    font-family: "Rozha One", serif;
+    font-size: 35px;
+}
+
+p, ul {
+    margin: 10px;
+    padding: 20px 0px;
+}
+
+#experience li {
+    background-color: #EAE2B7;
+    margin: 15px;
+    padding: 15px 0px;
+    list-style:none;
+}
+
+#connect li {
+    display: inline-block;
+    padding: 40px 80px;
+    background-color: #003049;
+    
+}
+
+a {
+    color: #F77F00;
+}
