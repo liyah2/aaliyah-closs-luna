@@ -14,17 +14,18 @@ body {
 img {
     width: 400px;
     border-radius: 40%;
-    margin: 0px 60px 50px;
+    margin: 0px 600px 50px;
     border: #F77F00 solid 10px;
     border-radius: 70% 40%;
+    display: block;
 }
 
 h1 {
     font-family: "Abril Fatface", serif;
     font-size: 140px;
-    margin: 30px 30px 70px 80px;
+    margin: 30px 20px 70px 80px;
     text-align: center;
-    display: inline-block;
+    display: block;
 }
 
 #comma {
@@ -57,7 +58,8 @@ p, ul {
 
 #connect li {
     display: inline-block;
-    padding: 40px 80px;
+    padding: 40px 200px;
+    margin: 40px;
     background-color: #003049;
     
 }
