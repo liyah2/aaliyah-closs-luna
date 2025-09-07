@@ -52,6 +52,7 @@ p, ul {
     margin: 15px;
     padding: 15px 0px;
     list-style:none;
+    text-align: center;
 }
 
 #connect li {
@@ -63,4 +64,9 @@ p, ul {
 
 a {
     color: #F77F00;
+}
+
+section {
+    padding: 0px 3px 6px;
+    margin: 0px 5px;
 }
