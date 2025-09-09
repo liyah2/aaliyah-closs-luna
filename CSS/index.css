@@ -1,74 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Ultra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Ultra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Ultra&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Caprasimo&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Caprasimo&family=Changa+One:ital@0;1&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ultra&display=swap");
 
 body {
-    background-color:mintcream;
-    color: #003049;
-    font-family: "Playfair Display", serif;
-    
-
+  background-color: mintcream;
+  color: #003049;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 img {
-    width: 400px;
-    border-radius: 40%;
-    margin: 0px 600px 50px;
-    border: #F77F00 solid 10px;
-    border-radius: 70% 40%;
-    display: block;
+  width: 400px;
+  margin: 130px 800px 150px;
+  border: #f77f00 solid 10px;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 h1 {
-    font-family: "Abril Fatface", serif;
-    font-size: 140px;
-    margin: 30px 20px 70px 80px;
-    text-align: center;
-    display: block;
+  font-family: "Abril Fatface", serif;
+  font-size: 140px;
+  margin: 20px 20px 70px 80px;
+  padding-top: 200px;
+  text-align: center;
+  display: block;
 }
 
 #comma {
-    color: #F77F00;
+  color: #f77f00;
+}
+
+.name h1 {
+  margin-top: -600px;
+  margin-left: -800px;
+}
+
+#about {
+  background-color: #eae2b7;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+#about h2 {
+  font-size: 55px;
+  text-align: center;
+}
+
+#about p {
+  text-align: justify;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.8;
+  font-size: 18px;
 }
 
 h2 {
-    color: #D62828;
-    padding: 2px 5px;
-    margin: 0px 4px;
-    /* border: #8BBF9F solid 3px; */
-    text-decoration: underline;
-    font-weight:300;
-    font-family: "Rozha One", serif;
-    font-size: 35px;
+  color: #d62828;
+  padding: 2px 5px;
+  margin: 0px 4px;
+  /* border: #8BBF9F solid 3px; */
+  font-weight: 300;
+  font-family: "Rozha One", serif;
+  font-size: 35px;
 }
 
-p, ul {
-    margin: 10px;
-    padding: 20px 0px;
+p,
+ul {
+  margin: 10px;
+  padding: 20px 0px;
 }
 
-#experience li {
+#experience h2,
+#skills h2,
+#projects h2,
+#connect h2 {
+  font-size: 55px;
+  padding-top: 20px;
+}
+
+/* #experience li {
     background-color: #EAE2B7;
     margin: 15px;
     padding: 15px 0px;
     list-style:none;
     text-align: center;
+} */
+
+#experience {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-#connect li {
-    display: inline-block;
-    padding: 40px 200px;
-    margin: 40px;
-    background-color: #003049;
-    
+.experience-item {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-a {
-    color: #F77F00;
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-section {
-    padding: 0px 3px 6px;
-    margin: 0px 5px;
+.job-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #003049;
+}
+
+.date {
+  font-size: 18px;
+  color: #f77f00;
+}
+
+.experience-description p {
+  margin: 0;
+  text-align: justify;
+}
+
+.navbar ul {
+  background-color: #00304999;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 0;
+  padding: 40px 0;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+  top: 0;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: mintcream;
+}
+
+.social {
+  background-color: #003049;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social i {
+  margin: 20px;
+  color: mintcream;
+  font-size: 70px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+#connect {
+  background-color: #003049;
+  text-align: center;
 }

@@ -1,40 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Aaliyah's Portfolio</title>
-        <meta charset="UTF 8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/index.css">
-    </head>
+  <head>
+    <title>Aaliyah's Portfolio</title>
+    <meta charset="UTF 8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-    <body>
+  <body>
+    <!-- Navigation bar -->
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Introduction -->
+      <div class="name">
+        <img src="images/me.png" alt="Image of Aaliyah" />
         <h1>Aaliyah<span id="comma">,</span></h1>
-        <img src="images/me.png" alt="Image of Aaliyah">
+      </div>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>I am very excited to be learning all about HTML, CSS and JavaScript. Although we got through alot of JavaScript, I think that would be the hardest for me.</p>
-        </section>
+      <!-- About Me section -->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am currently making my way through coding bootcamp and it has been
+          an amazing experience thus far. I will be activiely looking for work
+          and apprenticeships in the field really soon. As an apprentice, I hope
+          to gain more real life experience to expand my knowledge that I am
+          already embarking in. I enjoy the expoerience of coming across a
+          difficult issue and resolving it. I also enjoy that I am able to
+          combine my Graphic Design background with coding to create thing's
+          i've never thought I would be able to.
+        </p>
+        <p>
+          In my spare time I enjoy crocheting, painting, skating and anything
+          creative I can get my hands on. To get my wheels turning I love to do
+          riddles and puzzles. I even enjoy just sitting outside to enjoy
+          nature.
+        </p>
+      </section>
 
+      <!--Experience Section-->
+      <section id="experience">
+        <h2>Experience</h2>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>I've been in the G Code program</li>
-                <li>I've created a website using HTML and CSS</li>
-                <li>I've seen a bunch of tutorials on different ways of coding</li>
-            </ul>
-        </section>
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="job-title">Code the Dream Student</div>
+            <div class="date">06/23/25</div>
+          </div>
 
+          <div class="experience-description">
+            <p>
+              Enrolled in a coding programming class to help further my
+              understanding. Weekly assignments were given to help gain skill
+              and learn more about programs such as JavaScript, CSS and HTML.
+            </p>
+          </div>
+        </div>
 
-        <section id="connect">
-            <h2>Connect</h2>
-            <ul>
-                <li><a href="https://github.com/liyah2">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/aaliyah-closs-415175142/">LinkedIn</a></li>
-                <li><a href="https://x.com/Lilo_hanae">Twitter</a></li>
-            </ul>
-        </section>
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="job-title">G{Code}</div>
+            <div class="date">09/18/24</div>
+          </div>
 
-    </body>
+          <div class="experience-description">
+            <p>
+              Enrolled in a coding programming class to help further my
+              understanding. Weekly assignments were given to help gain skill
+              and learn more about programs such as JavaScript, CSS and HTML.
+              Completed portfolios and end of class projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Skills Section-->
+      <section id="skills">
+        <h2>Skills</h2>
+      </section>
+
+      <!--Projects Section-->
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <section id="connect">
+        <h2>Connect:</h2>
+        <div class="social">
+          <a href="https://x.com/Lilo_hanae" target="_blank"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/aaliyah-closs-415175142/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/liyah2" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
