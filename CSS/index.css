@@ -61,25 +61,18 @@ h1 {
 h2 {
   color: #d62828;
   padding: 2px 5px;
+  padding-top: 20px;
   margin: 0px 4px;
   /* border: #8BBF9F solid 3px; */
   font-weight: 300;
   font-family: "Rozha One", serif;
-  font-size: 35px;
+  font-size: 55px;
 }
 
 p,
 ul {
   margin: 10px;
   padding: 20px 0px;
-}
-
-#experience h2,
-#skills h2,
-#projects h2,
-#connect h2 {
-  font-size: 55px;
-  padding-top: 20px;
 }
 
 /* #experience li {
@@ -95,16 +88,17 @@ ul {
   text-align: center;
 }
 
-.experience-item {
+#experience ul {
   max-width: 900px;
   margin: 30px auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  list-style-type: none;
 }
 
-.experience-header {
+#experience li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,7 +116,7 @@ ul {
   color: #f77f00;
 }
 
-.experience-description p {
+#experience p {
   margin: 0;
   text-align: justify;
 }
