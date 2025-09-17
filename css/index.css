@@ -23,9 +23,9 @@ img {
 
 h1 {
   font-family: "Abril Fatface", serif;
-  font-size: 140px;
-  margin: 20px 20px 70px 80px;
-  padding-top: 200px;
+  font-size: 8.75rem;
+  margin: 1.25rem 1.25rem 4.375rem 5rem;
+  padding-top: 12.5rem;
   text-align: center;
   display: block;
 }
@@ -35,44 +35,44 @@ h1 {
 }
 
 .name h1 {
-  margin-top: -600px;
-  margin-left: -800px;
+  margin-top: -37.5rem;
+  margin-left: -50rem;
 }
 
 #about {
   background-color: #eae2b7;
   margin: 0 auto;
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 #about h2 {
-  font-size: 55px;
+  font-size: 3.438rem;
   text-align: center;
 }
 
 #about p {
   text-align: justify;
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 50rem;
+  margin: 1.25rem auto;
   line-height: 1.8;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 h2 {
   color: #d62828;
-  padding: 2px 5px;
-  padding-top: 20px;
-  margin: 0px 4px;
+  padding: 0.125rem 0.313rem;
+  padding-top: 1.25rem;
+  margin: 0rem 0.25rem;
   /* border: #8BBF9F solid 3px; */
   font-weight: 300;
   font-family: "Rozha One", serif;
-  font-size: 55px;
+  font-size: 3.438rem;
 }
 
 p,
 ul {
-  margin: 10px;
-  padding: 20px 0px;
+  margin: 0.625rem;
+  padding: 1.25rem 0rem;
 }
 
 /* #experience li {
@@ -84,17 +84,17 @@ ul {
 } */
 
 #experience {
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem;
   text-align: center;
 }
 
 #experience ul {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 20px;
+  max-width: 56.25rem;
+  margin: 1.875rem auto;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   list-style-type: none;
 }
 
@@ -106,13 +106,13 @@ ul {
 }
 
 .job-title {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: bold;
   color: #003049;
 }
 
 .date {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #f77f00;
 }
 
@@ -128,7 +128,7 @@ ul {
   justify-content: space-around;
   width: 100%;
   margin: 0 0;
-  padding: 40px 0;
+  padding: 2.5rem 0;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
@@ -148,9 +148,9 @@ ul {
 }
 
 .social i {
-  margin: 20px;
+  margin: 1.25rem;
   color: mintcream;
-  font-size: 70px;
+  font-size: 4.375rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
