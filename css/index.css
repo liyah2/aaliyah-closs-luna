@@ -220,6 +220,26 @@ ul {
 /* ===================== */
 @media (min-width: 768px) {
 
+  h1{
+    font-size: 7.05rem;
+    padding-top: 9.5rem;
+  }
+
+  img {
+    width: 350px;
+    margin: 150px 0px 50px 380px;
+    border: #f77f00 solid 6px;
+  }
+
+  .name h1 {
+    margin-top: -20.5rem;
+    margin-left: -18rem;
+  }
+
+  .social i {
+    margin: 1.25rem;
+    font-size: 4.25rem;
+  }
 }
 
 /* ====================== */
