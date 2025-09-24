@@ -5,6 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Caprasimo&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ultra&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Caprasimo&family=Changa+One:ital@0;1&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rozha+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ultra&display=swap");
 
+/* html {
+  font-size: 62.5%;
+} */
+
 /* Desktop */
 /* ============================= */
 body {
@@ -16,8 +20,8 @@ body {
 }
 
 img {
-  width: 400px;
-  margin: 130px 800px 150px;
+  width: 300px;
+  /* margin: 130px 80px 150px; Inline, does not take margins */
   border: #f77f00 solid 10px;
   border-radius: 50%;
   z-index: -1;
@@ -26,19 +30,40 @@ img {
 h1 {
   font-family: "Abril Fatface", serif;
   font-size: 8.75rem;
-  margin: 1.25rem 1.25rem 4.375rem 5rem;
-  padding-top: 12.5rem;
+  /* margin: 1.25rem 1.25rem 4.375rem 5rem; */
+  /* padding-top: 12.5rem; */
   text-align: center;
   display: block;
+
 }
 
 #comma {
   color: #f77f00;
 }
 
-.name h1 {
-  margin-top: -37.5rem;
-  margin-left: -50rem;
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  padding: 0 10px;
+  justify-content: space-around;
+}
+
+@media (min-width: 800px) {
+  .name {
+    flex-direction: row-reverse;
+  }
+
+  .name h1 {
+    align-self: end;
+    font-size: 6.75rem;
+  }
+
+  img {
+    width: 400px;
+  }
+
 }
 
 #about {
@@ -174,18 +199,18 @@ ul {
 @media (max-width: 600px) {
   h1{
     font-size: 5.75rem;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
   }
 
   img {
     width: 300px;
-    margin: 200px 0px 0px 120px;
+    /* margin: 200px 0px 0px 120px; */
     border: #f77f00 solid 4px;
   }
 
   .name h1 {
-    margin-top: 0rem;
-    margin-left: 0rem;
+    /* margin-top: 0rem;
+    margin-left: 0rem; */
   }
 
   #about p {
@@ -218,7 +243,7 @@ ul {
 
 /* Tablet */
 /* ===================== */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
   h1{
     font-size: 7.05rem;
@@ -226,20 +251,20 @@ ul {
   }
 
   img {
-    width: 350px;
-    margin: 150px 0px 50px 380px;
+    width: 400px;
+    margin: 150px 0px 50px 480px;
     border: #f77f00 solid 6px;
   }
 
   .name h1 {
     margin-top: -20.5rem;
-    margin-left: -18rem;
+    margin-left: -22rem;
   }
 
   .social i {
     margin: 1.25rem;
     font-size: 4.25rem;
   }
-}
+} */
 
 /* ====================== */
