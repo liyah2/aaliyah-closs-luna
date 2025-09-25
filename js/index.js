@@ -6,16 +6,11 @@ body.appendChild(footer);
 const today = new Date();
 const thisYear = today.getFullYear();
 
-footer = document.querySelector("footer");
-
 const copyright = document.createElement("p");
 
 copyright.innerHTML = `\u00A9 Aaliyah Closs ${thisYear}`;
 
 footer.appendChild(copyright);
-footer.style.textAlign = 'center';
-footer.style.backgroundColor = '#003049';
-footer.style.color = 'white';
 
 
 const skills = ["JavaScript", "HTML", "CSS", "Git" ,"Github"];
