@@ -254,7 +254,7 @@ footer p {
 
 /* Tablet */
 /* ===================== */
-@media (min-width: 800px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   .name {
     flex-direction: row-reverse;
   }

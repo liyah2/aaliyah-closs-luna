@@ -15,7 +15,7 @@ footer.appendChild(copyright);
 
 const skills = ["JavaScript", "HTML", "CSS", "Git" ,"Github"];
 const skillSection = document.getElementById("skills");
-const skillsList = skillSection.querySelector("ul");
+const skillsList = skillSection.querySelector(".skill-list");
 
 for (let i = 0; i < skills.length; i++) {
   const skill = document.createElement("li");
