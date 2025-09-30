@@ -50,22 +50,6 @@ h1 {
   justify-content: space-around;
 }
 
-@media (min-width: 800px) {
-  .name {
-    flex-direction: row-reverse;
-  }
-
-  .name h1 {
-    align-self: end;
-    font-size: 6.75rem;
-  }
-
-  img {
-    width: 400px;
-  }
-
-}
-
 #about {
   background-color: #eae2b7;
   margin: 0 auto;
@@ -94,6 +78,7 @@ h2 {
   font-weight: 300;
   font-family: "Rozha One", serif;
   font-size: 3.438rem;
+  text-align: center;
 }
 
 p,
@@ -112,7 +97,6 @@ ul {
 
 #experience {
   padding: 2.5rem 1.25rem;
-  text-align: center;
 }
 
 #experience ul {
@@ -147,6 +131,22 @@ ul {
   margin: 0;
   text-align: justify;
 }
+
+#skills ul {
+  list-style: none;
+  padding: 2.5rem 0 4.375rem 0;
+  display: flex;
+  gap: 3.125rem;
+  justify-content:center;
+}
+
+#skills li {
+  background-color:#f77f00;
+  color: white;
+  padding:15px;
+  border-radius: 10%;
+}
+
 
 .navbar ul {
   background-color: #00304999;
@@ -191,6 +191,17 @@ ul {
 #connect {
   background-color: #003049;
   text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #003049;
+  color: white;
+  padding: 1rem 0; /* Optional: adds some vertical space */
+}
+
+footer p {
+  margin: 0;
 }
 
 /* Mobile */
@@ -243,28 +254,20 @@ ul {
 
 /* Tablet */
 /* ===================== */
-/* @media (min-width: 768px) {
+@media (min-width: 601px) and (max-width: 1024px) {
+  .name {
+    flex-direction: row-reverse;
+  }
 
-  h1{
-    font-size: 7.05rem;
-    padding-top: 9.5rem;
+  .name h1 {
+    align-self: end;
+    font-size: 6.75rem;
   }
 
   img {
     width: 400px;
-    margin: 150px 0px 50px 480px;
-    border: #f77f00 solid 6px;
   }
 
-  .name h1 {
-    margin-top: -20.5rem;
-    margin-left: -22rem;
-  }
-
-  .social i {
-    margin: 1.25rem;
-    font-size: 4.25rem;
-  }
-} */
+}
 
 /* ====================== */
