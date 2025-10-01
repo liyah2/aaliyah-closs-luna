@@ -24,3 +24,86 @@ for (let i = 0; i < skills.length; i++) {
   
 }
 
+
+
+function activateMessageSection () {
+    const messageSection = document.getElementById("messages");
+    const messageList = messageSection.querySelector ("ul");
+    if(messageList.children.length === 0) {
+        messageSection.style.display = 'none';
+    } else {
+        messageSection.style.display = 'block';
+    }
+}
+
+activateMessageSection();
+
+const messageForm = document.querySelector('form[name="leave_message"]');
+
+messageForm.addEventListener("submit" , function(event) {
+    event.preventDefault();
+    const usersName = event.target.usersName.value;
+    const usersEmail = event.target.usersEmail.value;
+    const usersMessage = event.target.usersMessage.value;
+
+
+
+    console.log("Name: ", usersName );
+    console.log("Email: ", usersEmail );
+    console.log("Message: ", usersMessage );
+
+
+
+    const messageSection = document.getElementById("messages");
+    const messageList = messageSection.querySelector("ul");
+
+
+
+    const newMessage = document.createElement("li");
+    newMessage.innerHTML= `<a href="mailto:${usersEmail}">${usersName}</a>: <span> ${usersMessage}</span>`;
+
+
+    const editButton = document.createElement("button");
+    editButton.innerText = "edit";
+    editButton.className = "edit-btn"
+    editButton.type = "button"
+
+
+    editButton.addEventListener("click", function() {
+        const messageSpan = newMessage.querySelector("span");
+        const newText = prompt("Edit your message: " , messageSpan.innerText);
+        if (newText !== null) {
+            messageSpan.innerText = newText;
+        }
+    });
+
+    newMessage.appendChild(editButton);
+
+
+
+    const removeButton = document.createElement("button");
+    removeButton.innerText = "remove";
+    removeButton.className = "remove-btn";
+    removeButton.type = "button";
+
+
+
+    removeButton.addEventListener("click", function() {
+        const entry = removeButton.parentNode;
+
+        entry.remove();
+
+        activateMessageSection();
+    });
+
+
+
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+
+    activateMessageSection();
+
+    messageForm.reset();
+});
+
+

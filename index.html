@@ -21,6 +21,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#connect">Connect</a></li>
+          <li><a href="#form">Leave a Message</a></li>
         </ul>
       </nav>
     </header>
@@ -29,7 +30,7 @@
       <!-- Introduction -->
       <div class="name">
         <img src="images/me.png" alt="Image of Aaliyah" />
-        
+
         <h1>Aaliyah<span id="comma">,</span></h1>
       </div>
 
@@ -59,28 +60,28 @@
         <h2>Experience</h2>
 
         <ul>
-            <li>
-                <div class="job-title">Code the Dream Student</div>
-                <div class="date"> 2025 </div>
-                <p>
-                Enrolled in a coding programming class to help further my
-                understanding. Weekly assignments were given to help gain skill
-                and learn more about programs such as JavaScript, CSS and HTML.
-                </p>
-            </li>
+          <li>
+            <div class="job-title">Code the Dream Student</div>
+            <div class="date">2025</div>
+            <p>
+              Enrolled in a coding programming class to help further my
+              understanding. Weekly assignments were given to help gain skill
+              and learn more about programs such as JavaScript, CSS and HTML.
+            </p>
+          </li>
 
-            <li>
-                <div class="job-title">G{Code}</div>
-                        <div class="date"> 2025 </div>
-                        <p>
-                        Enrolled in a coding programming class to help further my
-                        understanding. Weekly assignments were given to help gain skill
-                        and learn more about programs such as JavaScript, CSS and HTML.</p>
-            </li>
-            
+          <li>
+            <div class="job-title">G{Code}</div>
+            <div class="date">2025</div>
+            <p>
+              Enrolled in a coding programming class to help further my
+              understanding. Weekly assignments were given to help gain skill
+              and learn more about programs such as JavaScript, CSS and HTML.
+            </p>
+          </li>
         </ul>
 
-      <!--Simplified the below into the above - easy to grab the id and pinpoint which section by using 'p' 'ul' 'li'-->          
+        <!--Simplified the below into the above - easy to grab the id and pinpoint which section by using 'p' 'ul' 'li'-->
 
         <!-- <div class="experience-item">
           <div class="experience-header">
@@ -117,8 +118,7 @@
       <!--Skills Section-->
       <section id="skills">
         <h2>Skills</h2>
-        <ul class="skill-list">
-        </ul>
+        <ul class="skill-list"></ul>
       </section>
 
       <!--Projects Section-->
@@ -130,22 +130,56 @@
       </section>
     </main>
 
-      <section id="connect">
-        <h2>Connect:</h2>
-        <div class="social">
-          <a href="https://x.com/Lilo_hanae" target="_blank"
-            ><i class="fab fa-x-twitter"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/aaliyah-closs-415175142/"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/liyah2" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-      </section>
+    <!--Connect Section-->
+    <section id="connect">
+      <h2>Connect:</h2>
+      <div class="social">
+        <a href="https://x.com/Lilo_hanae" target="_blank"
+          ><i class="fab fa-x-twitter"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/aaliyah-closs-415175142/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/liyah2" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </section>
+
+    <!--Leave a Message Section-->
+    <section id="form">
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <label for="usersName">Name: </label><br />
+        <input
+          type="text"
+          id="usersName"
+          name="usersName"
+          required
+        /><br /><br />
+
+        <label for="usersEmail"> Email:</label><br />
+        <input
+          type="email"
+          id="usersEmail"
+          name="usersEmail"
+          required
+        /><br /><br />
+
+        <label for="usersMessage"> Message:</label><br />
+        <textarea name="usersMessage" id="usersMessage" required></textarea
+        ><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
     <script src="js/index.js"></script>
   </body>
 </html>
