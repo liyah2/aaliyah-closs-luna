@@ -34,7 +34,6 @@ h1 {
   /* padding-top: 12.5rem; */
   text-align: center;
   display: block;
-
 }
 
 #comma {
@@ -137,16 +136,17 @@ ul {
   padding: 2.5rem 0 4.375rem 0;
   display: flex;
   gap: 3.125rem;
-  justify-content:center;
+  justify-content: center;
 }
 
 #skills li {
-  background-color:#f77f00;
+  background-color: #f77f00;
   color: white;
-  padding:15px;
+  padding: 15px;
   border-radius: 10%;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-
 
 .navbar ul {
   background-color: #00304999;
@@ -175,7 +175,7 @@ ul {
 }
 
 .social i {
-  margin: 1.25rem;
+  margin: 6.25rem;
   color: mintcream;
   font-size: 4.375rem;
   cursor: pointer;
@@ -187,10 +187,46 @@ ul {
 .social a {
   text-decoration: none;
 }
+#form form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#form input,
+#form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  border: 2px solid #f77f00;
+  border-radius: 8px;
+}
+
+#form textarea {
+  min-height: 150px;
+}
+
+#form button {
+  padding: 10px 40px;
+  background: #d62828;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  cursor: pointer;
+  width: 150px;
+  margin: 1rem auto 30px;
+  display: block;
+}
 
 #connect {
   background-color: #003049;
   text-align: center;
+  height: 350px;
 }
 
 footer {
@@ -208,7 +244,7 @@ footer p {
 /* ====================== */
 
 @media (max-width: 600px) {
-  h1{
+  h1 {
     font-size: 5.75rem;
     /* padding-top: 1.5rem; */
   }
@@ -219,10 +255,10 @@ footer p {
     border: #f77f00 solid 4px;
   }
 
-  .name h1 {
-    /* margin-top: 0rem;
-    margin-left: 0rem; */
-  }
+  /* .name h1 {
+    margin-top: 0rem;
+    margin-left: 0rem;
+  } */
 
   #about p {
     font-size: 1rem;
@@ -244,13 +280,9 @@ footer p {
     margin: 1rem;
     font-size: 3.375rem;
   }
-
-
 }
 
 /* ====================== */
-
-
 
 /* Tablet */
 /* ===================== */
@@ -267,7 +299,6 @@ footer p {
   img {
     width: 400px;
   }
-
 }
 
 /* ====================== */
