@@ -70,7 +70,7 @@ messageForm.addEventListener("submit" , function(event) {
 
 
     editButton.addEventListener("click", function() {
-        const messageSpan = newMessage.querySelector("span");
+        const messageSpan = this.parentNode.querySelector("span");
         const newText = prompt("Edit your message: " , messageSpan.innerText);
         if (newText !== null) {
             messageSpan.innerText = newText;
@@ -89,10 +89,8 @@ messageForm.addEventListener("submit" , function(event) {
 
 
     removeButton.addEventListener("click", function() {
-        const entry = removeButton.parentNode;
-
+        const entry = this.parentNode;
         entry.remove();
-
         activateMessageSection();
     });
 
