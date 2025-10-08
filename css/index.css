@@ -94,6 +94,10 @@ ul {
     text-align: center;
 } */
 
+/* ===========================
+   Experience  Styling
+=========================== */
+
 #experience {
   padding: 2.5rem 1.25rem;
 }
@@ -130,6 +134,10 @@ ul {
   margin: 0;
   text-align: justify;
 }
+
+/* ===========================
+   Skills Styling
+=========================== */
 
 #skills ul {
   list-style: none;
@@ -168,6 +176,35 @@ ul {
   color: mintcream;
 }
 
+/* ===========================
+   Projects  Styling
+=========================== */
+#projects ul {
+  list-style: none;           
+  padding: 1rem;
+  display: flex;              
+  flex-wrap: wrap;            
+  gap: 1rem;                  
+  justify-content: center;    
+}
+
+#projects li {
+  background-color: #f77f00;  
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#projects li:hover {
+  background-color: #d62828;  
+}
+
+/* ===========================
+   Connect  Styling
+=========================== */
+
 .social {
   background-color: #003049;
   display: flex;
@@ -187,6 +224,10 @@ ul {
 .social a {
   text-decoration: none;
 }
+
+/* ===========================
+   Message  Styling
+=========================== */
 #form form {
   display: flex;
   flex-direction: column;
@@ -211,7 +252,7 @@ ul {
 
 #form button {
   padding: 10px 40px;
-  background: #d62828;
+  background: #f77f00;
   color: white;
   font-weight: 600;
   border: none;
@@ -228,6 +269,14 @@ ul {
   text-align: center;
   height: 350px;
 }
+
+#form button:hover {
+  background-color: #d62828;  
+}
+
+/* ===========================
+   Footer  Styling
+=========================== */
 
 footer {
   text-align: center;
@@ -276,6 +325,18 @@ footer p {
     font-size: 1rem;
   }
 
+   #projects ul {
+    flex-direction: column;  
+    align-items: center;     
+    gap: 0.5rem;             
+    padding: 0.5rem;
+  }
+
+  #projects li {
+    width: 90%;              
+    font-size: 1rem;         
+  }
+
   .social i {
     margin: 1rem;
     font-size: 3.375rem;
@@ -302,3 +363,7 @@ footer p {
 }
 
 /* ====================== */
+
+
+
+
