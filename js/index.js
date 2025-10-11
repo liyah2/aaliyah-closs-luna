@@ -124,5 +124,8 @@ fetch("https://api.github.com/users/liyah2/repos")
         project.innerHTML = repositories[i].name;
         projectList.appendChild(project);
     }
-});
+})
 
+.catch ((error) => {
+    console.log("Error: ", error)
+})
