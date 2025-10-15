@@ -104,4 +104,28 @@ messageForm.addEventListener("submit" , function(event) {
     messageForm.reset();
 });
 
+// ====Creating Fetch====
 
+fetch("https://api.github.com/users/liyah2/repos")
+.then ((response) => {
+    return response.json();
+})
+
+.then((repositories)=> {
+    console.log("Repositories: ", repositories);
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    projectList.innerHTML = "";
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+
+        project.innerHTML = repositories[i].name;
+        projectList.appendChild(project);
+    }
+})
+
+.catch ((error) => {
+    console.log("Error: ", error)
+})
