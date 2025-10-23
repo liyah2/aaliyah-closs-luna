@@ -565,6 +565,14 @@ footer p {
         font-size: 1.1rem;
     }
 
+    html, body {
+      overflow-x: hidden;
+    }
+    
+    .navbar ul {
+      flex-wrap: wrap; /* Helps prevent overflow if text is long */
+    }
+
     /* ============Image ===================*/
     img {
         width: 18.125rem;

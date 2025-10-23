@@ -14,7 +14,7 @@ body.appendChild(footer);
 
 // ===========Skills section==============
 // Populate skills section with items assigned to skills
-const skills = ["JavaScript", "HTML", "CSS", "Git", "Github"];
+const skills = ["JavaScript", "HTML", "CSS", "Git", "GitHub"];
 const skillSection = document.getElementById("skills");
 const skillsList = skillSection.querySelector(".skill-list");
 
