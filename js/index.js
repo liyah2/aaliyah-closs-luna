@@ -81,7 +81,8 @@ messageForm.addEventListener("submit", function (event) {
         entry.remove();
         activateMessageSection();
     });
-    newMessage.appendChild(editButton, removeButton);
+    newMessage.appendChild(removeButton);
+    newMessage.appendChild(editButton);
     messageList.appendChild(newMessage);
 
     activateMessageSection();
